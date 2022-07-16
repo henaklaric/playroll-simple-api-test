@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  postgres:
+    image: "postgres:9.6.1"
+    ports:
+      - "49153"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgrespw"
+      POSTGRES_DB: "test"
+
